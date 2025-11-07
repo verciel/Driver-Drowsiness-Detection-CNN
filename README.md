@@ -70,6 +70,7 @@ This is brilliant because:
 
 ---
 ## Project Structure
+```
 Driver-Drowsiness-Detection-CNN/
 ├── assets/
 │   ├── haarcascade_frontalface_alt.xml      # Finds faces
@@ -86,7 +87,7 @@ Driver-Drowsiness-Detection-CNN/
 ├── run_detection.py                         # The main application to run
 ├── requirements.txt                         # List of Python libraries
 └── README.md                                # This file!
-
+```
 ---
 
 ## Installation & Usage 
