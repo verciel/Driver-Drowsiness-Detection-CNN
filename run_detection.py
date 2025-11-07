@@ -6,16 +6,16 @@ import pygame
 # --- 1. Load All Assets ---
 print("Loading assets...")
 # Load the pre-trained Keras model
-model = load_model('drowsiness_model.h5')
+model = load_model('saved_model/drowsiness_model.h5')
 
 # Load the Haar cascade files for face and eye detection
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
-left_eye_cascade = cv2.CascadeClassifier('haarcascade_lefteye_2splits.xml')
-right_eye_cascade = cv2.CascadeClassifier('haarcascade_righteye_2splits.xml')
+face_cascade = cv2.CascadeClassifier('assets/haarcascade_frontalface_alt.xml')
+left_eye_cascade = cv2.CascadeClassifier('assets/haarcascade_lefteye_2splits.xml')
+right_eye_cascade = cv2.CascadeClassifier('assets/haarcascade_righteye_2splits.xml')
 
 # Initialize Pygame for playing the alarm sound
 pygame.mixer.init()
-pygame.mixer.music.load('alarm.wav') # Make sure you have an 'alarm.wav' file
+pygame.mixer.music.load('assets/alarm.wav') # Make sure you have an 'alarm.wav' file
 print("Assets loaded.")
 
 # --- 2. Constants and Variables ---
