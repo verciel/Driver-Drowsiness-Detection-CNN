@@ -1,0 +1,4 @@
+myenv/ 
+__pycache__/ 
+*.npy 
+mrlEyes_2018_01/
